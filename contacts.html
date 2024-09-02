@@ -74,13 +74,15 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <form class="text-center" method="POST" action="https://script.google.com/macros/s/AKfycbxwETBjsps1kuCSK8hrcTyU0nOexKYHALuUy3zXtgTGZxuPS3RzGFMRHcgFXgwZZ69iAg/exec" onsubmit="handleFormSubmit(event)">
-                                <input class="my-2" type="text" name="firstname" placeholder="First name"><br>
-                                <input class="my-2" type="email" name="email" placeholder="Your email"><br>
-                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message"></textarea>
+                                <input class="my-2" type="text" name="firstname" placeholder="First name" required><br>
+                                <input class="my-2" type="email" name="email" placeholder="Your email" required><br>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message" required></textarea>
+
                                 <!-- Submit error message-->
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
-                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled my-3" id="submitButton" type="submit">Submit</button></div>
+                                <div class="d-grid"><div class="d-grid"><button class="btn btn-primary btn-lg my-3" id="submitButton" type="submit">Submit</button></div>
+                            </div>
                             </form>                                                     
                         </div>
                     </div>
