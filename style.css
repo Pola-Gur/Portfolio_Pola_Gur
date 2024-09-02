@@ -42,3 +42,7 @@ body {
   .start-icon {
     height: 5vh;
   }
+
+#icons_set {
+  margin-bottom: 10%;
+}
