@@ -50,17 +50,15 @@
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
-                        <form class="text-center">
-                            <input class="my-2" type="text" name="firstname" placeholder="First name"><br>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
-                                 <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
+                            <form class="text-center" method="POST" action="https://script.google.com/macros/s/AKfycbwQdEP-Sa-j2KRKlxTp9Vyz2k_yxLK62SeQ2YpEM6tDBJ4kx0-wJcsp8oetgdzbhH_nOQ/exec">
+                                <input class="my-2" type="text" name="firstname" placeholder="First name"><br>
+                                <input class="my-2" type="email" name="email" placeholder="Your email"><br>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message"></textarea>
+                                <!-- Submit error message-->
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
                                 <div class="d-grid"><button class="btn btn-primary btn-lg disabled my-3" id="submitButton" type="submit">Submit</button></div>
-                        </form>
+                            </form>                            
                         </div>
                     </div>
                 </div>
